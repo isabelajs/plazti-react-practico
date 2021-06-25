@@ -1,7 +1,7 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
-import Hello from './components/Hello'
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './container/App';
 
 
-ReactDOM.render(<Hello/>, document.getElementById('root'))
+ReactDOM.render(<App/>, document.getElementById('root'));
 
