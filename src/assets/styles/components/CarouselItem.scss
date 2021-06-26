@@ -1,0 +1,77 @@
+.carousel-item{
+  min-width: 200px;
+  height: 250px;
+  border-radius: 20px;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: 450ms all;
+  transform-origin: center left;
+  overflow: hidden;
+  position: relative;
+
+  &:last-child{
+      transform-origin: center right;
+  }
+  
+  &:hover{
+      .carousel-item__details{
+          opacity: 1;
+      }
+  }
+
+  &:hover ~ .carousel-item{
+      transform: translateX(60px);
+      opacity: 0.3;
+  }
+  
+  &__img{
+      object-fit:cover;
+      width: 200px;
+      height: 250px;
+  } 
+  
+  &__details{
+      bottom: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      position: absolute;
+      inset: 0 0 0 0 ;
+      background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 100%);
+      padding: 10px 10px;
+      opacity: 0;
+      transition: 450ms opacity;
+      
+      .icons {
+          display: flex;
+          &__icon{
+              width:20px;
+              height: 20px;
+
+              &--play{
+                  background: url("../../statics/play-icon.png")center/cover no-repeat;
+                  margin-right:5px ;
+              }
+
+              &--plus{
+                  background: url("../../statics/plus-icon.png")center/cover no-repeat;
+              }
+
+          }
+          
+      }
+
+      .title{
+          font-size: 1.6rem;
+          margin: 3px 0;
+      }
+      .subtitle{
+          font-size: 1rem;
+      }
+  }
+
+}
+
+.moveLeft{
+    transform:translateX(-60px)
+}

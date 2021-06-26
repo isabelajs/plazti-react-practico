@@ -1,13 +1,26 @@
-.main {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+.main__search {
   height: 300px;
-  border-radius: 0px 0px 40px 40px;
-}
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
-.main__title {
-  color: white;
-  font-size: 25px;
+  .main__title {
+    color: white;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+  }
+
+  .main__input {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid white;
+    border-radius: 25px;
+    height: 5rem;
+    padding: 0 20px;
+    width: 70%;
+    outline: none;
+  }
+  ::placeholder {
+    color: white;
+  }
 }

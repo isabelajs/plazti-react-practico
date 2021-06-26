@@ -1,0 +1,29 @@
+.carousel {
+  overflow-x: scroll;
+  padding: 50px 0px;
+  scroll-behavior: smooth;
+  display: flex;
+  flex-direction: column;
+
+  &::-webkit-scrollbar{
+    display: none;
+  }
+}
+
+.carousel__container{
+                    
+  display: flex;
+
+  &:hover {
+      .carousel-item{
+          opacity: 0.3;
+      }
+
+      .carousel-item:hover{
+          opacity: 1;
+          transform: scale(1.3);
+      }
+
+  }
+}
+

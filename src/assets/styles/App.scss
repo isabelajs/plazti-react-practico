@@ -1,10 +1,20 @@
-body {
+@import './Vars.scss' ;
+@import './Media.scss';
+
+
+*{
   margin: 0;
-  font-family: 'Muli', sans-serif;
-  background: #8f57fd;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-* {
-  box-sizing: border-box;
+html{
+  font-size: 62.5%;
+}
+
+.App{
+  background-color: $main-color;
+  color: white;
+  font-family: $theme-font ;
 }
 

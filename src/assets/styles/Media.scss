@@ -1,0 +1,22 @@
+@media (max-width:425px){
+  .main__category{
+      .categoria{
+          .categoria__buttons{
+              opacity: 0;
+              visibility: hidden;
+          }
+      }
+  }
+}
+@media (max-width: 600px) {
+  .main__description--title {
+    font-size: 30px;
+  }
+
+  .footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+}

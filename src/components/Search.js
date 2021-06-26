@@ -3,11 +3,12 @@ import '../assets/styles/components/Search.scss';
 
 function Search() {
   return (
-    <section className='main'>
+    <section className='main__search'>
       <h2 className='main__title'>¿Qué quieres ver hoy?</h2>
-      <input type='text' className='input' placeholder='Buscar...' />
+      <input className='main__input' type='text' placeholder='Buscar...' />
     </section>
   );
 }
 
 export default Search;
+

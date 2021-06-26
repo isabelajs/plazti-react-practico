@@ -1,0 +1,28 @@
+.categorie{
+  position: relative;
+  
+  &__title{
+      font-size: 2rem;
+  }
+  &__buttons{
+    display: flex;
+    
+    .categorie__button{
+        position: absolute;
+        top: 73px;
+        width: 50px;
+        height: 250px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        background: url(../../statics/play-icon.png) center/contain no-repeat;
+
+        &-left{
+            transform: scaleX(-1);
+        }
+        &-right{
+            right: 0;
+        }
+    }
+}
+}
