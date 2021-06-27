@@ -11,6 +11,10 @@ export default function Categorie(props) {
 
       {props.children}
 
+
+      {/* //si aca van los botones
+      //deben tener acceso a la ref del children creado arriba */}
+
     </div>
   );
 };

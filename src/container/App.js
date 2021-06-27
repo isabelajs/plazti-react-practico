@@ -1,5 +1,5 @@
 
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import Header from '../components/Header';
 import Search from '../components/Search';
 import Main from '../components/Main';
@@ -10,11 +10,12 @@ import CarouselItem from '../components/CarouselItem';
 import Footer from '../components/Footer';
 import '../assets/styles/App.scss';
 import data from '../../initialState.json'
+import Test from '../components/test'
 import { initial } from 'lodash';
 
 function App() {
   const {initalState} = data
-
+  const ref = useRef(null)
 
   return (
     <div className='App'>
@@ -51,7 +52,7 @@ function App() {
             <Carousel>
             { initalState.originals.length > 0 &&
               initalState.originals.map(video =>
-                <CarouselItem key={video.id} {...video}/>
+                <CarouselItem key={video.id} {...video} />
                 )
             }
             </Carousel>
