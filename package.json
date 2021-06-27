@@ -3,10 +3,12 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "homepage": "https://isabelajs.github.io/platzi-react-practico",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --mode production",
-    "start": "webpack serve --mode development --env development"
+    "start": "webpack serve --mode development --env development",
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [],
   "author": "Isabela Jimenez <isabelajimenezs@gmail.com>",
@@ -33,6 +35,7 @@
     "webpack-dev-server": "^3.11.2"
   },
   "dependencies": {
+    "gh-pages": "^3.2.3",
     "prop-types": "^15.7.2"
   }
 }
