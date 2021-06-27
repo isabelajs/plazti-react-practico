@@ -79,6 +79,45 @@
         "cover": "http://dummyimage.com/800x600.png/FF7A90/ffffff",
         "description": "Vestibulum ac est lacinia nisi venenatis tristique",
         "source": "https://mdstrm.com/video/58333e214ad055d208427db5.mp4"
+      },
+      {
+        "id": 8,
+        "slug": "tvshow-7",
+        "title": "The InBetween",
+        "type": "Drama",
+        "language": "English",
+        "year": 2011,
+        "contentRating": "16+",
+        "duration": 179,
+        "cover": "http://dummyimage.com/800x600.png/2a9d8f/ffffff",
+        "description": "Vestibulum ac est lacinia nisi venenatis tristique",
+        "source": "https://mdstrm.com/video/58333e214ad055d208427db5.mp4"
+      },
+      {
+        "id": 9,
+        "slug": "tvshow-7",
+        "title": "The InBetween",
+        "type": "Drama",
+        "language": "English",
+        "year": 2011,
+        "contentRating": "16+",
+        "duration": 179,
+        "cover": "http://dummyimage.com/800x600.png/e63946/ffffff",
+        "description": "Vestibulum ac est lacinia nisi venenatis tristique",
+        "source": "https://mdstrm.com/video/58333e214ad055d208427db5.mp4"
+      },
+      {
+        "id": 10,
+        "slug": "tvshow-7",
+        "title": "The InBetween",
+        "type": "Drama",
+        "language": "English",
+        "year": 2011,
+        "contentRating": "16+",
+        "duration": 179,
+        "cover": "http://dummyimage.com/800x600.png/ffb703/ffffff",
+        "description": "Vestibulum ac est lacinia nisi venenatis tristique",
+        "source": "https://mdstrm.com/video/58333e214ad055d208427db5.mp4"
       }
     ],
     "originals": [
@@ -156,7 +195,46 @@
         "year": 2010,
         "contentRating": "16+",
         "duration": 160,
+        "cover": "http://dummyimage.com/800x600.png/ffb703/ffffff",
+        "description": "Vestibulum ac est lacinia nisi venenatis tristique",
+        "source": "https://mdstrm.com/video/58333e214ad055d208427db5.mp4"
+      },
+      {
+        "id": 14,
+        "slug": "tvshow-13",
+        "title": "NCIS: Los Angeles",
+        "type": "Drama",
+        "language": "English",
+        "year": 2010,
+        "contentRating": "16+",
+        "duration": 160,
         "cover": "http://dummyimage.com/800x600.png/5472FF/ffffff",
+        "description": "Vestibulum ac est lacinia nisi venenatis tristique",
+        "source": "https://mdstrm.com/video/58333e214ad055d208427db5.mp4"
+      },
+      {
+        "id": 15,
+        "slug": "tvshow-7",
+        "title": "The InBetween",
+        "type": "Drama",
+        "language": "English",
+        "year": 2011,
+        "contentRating": "16+",
+        "duration": 179,
+        "cover": "http://dummyimage.com/800x600.png/FF7A90/ffffff",
+        "description": "Vestibulum ac est lacinia nisi venenatis tristique",
+        "source": "https://mdstrm.com/video/58333e214ad055d208427db5.mp4"
+      },
+      {
+        "id": 16,
+        "slug": "tvshow-7",
+        "title": "The InBetween",
+        "type": "Drama",
+        "language": "English",
+        "year": 2011,
+        "contentRating": "16+",
+        "duration": 179,
+        "cover": "http://dummyimage.com/800x600.png/e63946/ffffff",
         "description": "Vestibulum ac est lacinia nisi venenatis tristique",
         "source": "https://mdstrm.com/video/58333e214ad055d208427db5.mp4"
       }
