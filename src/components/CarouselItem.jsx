@@ -1,19 +1,27 @@
-import React, { useRef, forwardRef, useState } from 'react';
+import React, { forwardRef } from 'react';
+import { connect } from 'react-redux';
+import { setFavorite } from '../actions';
 import PropTypes from 'prop-types';
 import '../assets/styles/components/CarouselItem.scss' ;
 
 const CarouselItem = forwardRef((props,ref)=>{
   
-  const {click, cover, title, year, contentRating, duration} = props
+  const {id, cover, title, year, contentRating, duration} = props;
+
+  const handleSetFavorite = ()=>{
+    props.setFavorite({
+      id, cover, title, year, contentRating, duration,
+    })
+  }
   
   //cada que se ejecuta de nuevo esta funcion el componente se renderiza y por ende ref activa la funcion para volver a guardar la instancia generada
   return (
     <div ref={ref} className='carousel-item'>
       <img className='carousel-item__img' src={cover} alt={title} />
-      <div onClick={click ? click: ()=>{}} className='carousel-item__details'>
+      <div  className='carousel-item__details'>
         <div className='icons'>
           <div className='icons__icon icons__icon--play' />
-          <div className='icons__icon icons__icon--plus' />
+          <div onClick={handleSetFavorite} className='icons__icon icons__icon--plus' />
         </div>
         <p className='title'>{title}</p>
         <p className='subtitle'>
@@ -34,5 +42,10 @@ CarouselItem.propTypes = {
   year: PropTypes.number,
 }
 
+const mapDispatchToProps = { 
+  setFavorite
+}
 
-export default CarouselItem
+export default connect(null, mapDispatchToProps,null,{forwardRef:true})(CarouselItem)
+
+// export  default CarouselItem

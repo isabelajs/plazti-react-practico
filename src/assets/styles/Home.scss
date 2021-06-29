@@ -5,16 +5,13 @@
 *{
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 html{
   font-size: 62.5%;
-}
-
-.App{
+  font-family: $theme-font ;
   background-color: $main-color;
   color: white;
-  font-family: $theme-font ;
 }
+
 
