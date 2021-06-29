@@ -5,6 +5,8 @@ import Login from '../container/Login';
 import Registrer from '../container/Registro';
 import NotFound from '../container/NotFound';
 import Layout from '../components/Layout'
+import store from '../utils/data';
+
 
 export default function App () {
     return (
@@ -20,3 +22,6 @@ export default function App () {
     </BrowserRouter>
 );
 };
+
+
+
