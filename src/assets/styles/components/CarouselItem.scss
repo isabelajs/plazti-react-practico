@@ -50,12 +50,17 @@
 
               &--play{
                   background: url("../../statics/play-icon.png")center/cover no-repeat;
-                  margin-right:5px ;
               }
 
               &--plus{
                   background: url("../../statics/plus-icon.png")center/cover no-repeat;
+                  margin: 0 5px;
               }
+
+              
+              &--remove{
+                background: url("../../statics/remove-icon.png")center/cover no-repeat;
+            }
 
           }
           

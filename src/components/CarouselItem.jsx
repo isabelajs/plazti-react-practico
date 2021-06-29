@@ -1,9 +1,8 @@
 import React, { forwardRef, useEffect } from 'react';
 import { connect } from 'react-redux';
-import { setFavorite } from '../actions';
+import { setFavorite, deteleFavorite } from '../actions';
 import PropTypes from 'prop-types';
 import '../assets/styles/components/CarouselItem.scss' ;
-import store  from '../utils/data';
 
 const CarouselItem = forwardRef((props,ref)=>{
   
@@ -16,6 +15,12 @@ const CarouselItem = forwardRef((props,ref)=>{
     })
 
   }
+
+  const handleDeleteFavorite = ()=>{
+    props.deteleFavorite({
+      id
+    })
+  }
   
   //cada que se ejecuta de nuevo esta funcion el componente se renderiza y por ende ref activa la funcion para volver a guardar la instancia generada
   return (
@@ -23,8 +28,9 @@ const CarouselItem = forwardRef((props,ref)=>{
       <img className='carousel-item__img' src={cover} alt={title} />
       <div  className='carousel-item__details'>
         <div className='icons'>
-          <div className='icons__icon icons__icon--play' />
-          <div onClick={handleSetFavorite} className='icons__icon icons__icon--plus' />
+          <div className='icons__icon icons__icon--play'> </div>
+          <div onClick={handleSetFavorite} className='icons__icon icons__icon--plus'></div>
+          <div onClick={handleDeleteFavorite} className ='icons__icon icons__icon--remove'></div>
         </div>
         <p className='title'>{title}</p>
         <p className='subtitle'>
@@ -48,6 +54,7 @@ CarouselItem.propTypes = {
 
 const mapDispatchToProps ={
   setFavorite,
+  deteleFavorite
 }
 
 
