@@ -6,7 +6,7 @@ import '../assets/styles/components/CarouselItem.scss' ;
 
 const CarouselItem = forwardRef((props,ref)=>{
   
-  const {id, cover, title, year, contentRating, duration} = props;
+  const {id, cover, title, year, contentRating, duration, isList} = props;
 
 
   const handleSetFavorite = ()=>{
@@ -29,8 +29,11 @@ const CarouselItem = forwardRef((props,ref)=>{
       <div  className='carousel-item__details'>
         <div className='icons'>
           <div className='icons__icon icons__icon--play'> </div>
-          <div onClick={handleSetFavorite} className='icons__icon icons__icon--plus'></div>
-          <div onClick={handleDeleteFavorite} className ='icons__icon icons__icon--remove'></div>
+          {isList
+            ? <div onClick={handleDeleteFavorite} className ='icons__icon icons__icon--remove'></div> 
+            : <div onClick={handleSetFavorite} className='icons__icon icons__icon--plus'></div>
+          }
+                    
         </div>
         <p className='title'>{title}</p>
         <p className='subtitle'>

@@ -83,14 +83,18 @@ function Carousel({ children }) {
   useEffect(() => {
     const lastItemCarousel = childrenRef.current[childrenRef.current.length-1]
     const itemsWithoutLastItem = childrenRef.current.slice(0,-1)
+    
+    if(childrenRef.current,length>1){
+      lastItemCarousel.onmouseover = ()=>{itemsWithoutLastItem.forEach(item => {
+        item.style.transform = 'translateX(-60px)'
+      });}
+  
+      lastItemCarousel.onmouseout = ()=>{itemsWithoutLastItem.forEach(item => {
+        item.style.transform = ""
+      });}
 
-    lastItemCarousel.onmouseover = ()=>{itemsWithoutLastItem.forEach(item => {
-      item.style.transform = 'translateX(-60px)'
-    });}
+    }
 
-    lastItemCarousel.onmouseout = ()=>{itemsWithoutLastItem.forEach(item => {
-      item.style.transform = ""
-    });}
 
   }, []);
 

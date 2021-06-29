@@ -25,11 +25,15 @@ function Home(props) {
     
         {/* //si dentro del componente lista existen elementos */}
         { mylist.length > 0 &&
-          <Categorie title='popo'>
+          <Categorie title='Mis favoritos'>
             <Carousel>
               {
                 mylist.map(video =>
-                <CarouselItem key={video.id} {...video}/>
+                <CarouselItem 
+                  key={video.id} 
+                  {...video}
+                  isList
+                  />
                 )
               }
             </Carousel>
