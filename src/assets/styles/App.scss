@@ -1,0 +1,20 @@
+@import './Vars.scss' ;
+@import './Media.scss';
+
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+html{
+  font-size: 62.5%;
+  font-family: $theme-font ;
+  // background-color: $main-color;
+  background: linear-gradient(180deg, hsla(0, 0%, 2%, 1) 0%, hsla(281, 66%, 6%, 1) 18%, hsla(280, 93%, 12%, 1) 50%, hsla(295, 87%, 15%, 1) 91%, hsla(300, 84%, 17%, 1) 100%);
+
+
+}
+
+
+

@@ -4,14 +4,13 @@
   justify-content: space-between;
   height: 80px;
   box-shadow: 0px 0px 5px rgba(59, 57, 57, 0.8);
-  padding: 0 10px 0 10px;
+  padding: 0 20px;
 }
 .header .header__logo {
   width: 180px;
 }
 .header .header__menu {
   font-size: 1.6rem;
-  margin-right: 20px;
   cursor: pointer;
 }
 .header .header__menu:hover > .menu--list {
@@ -23,6 +22,7 @@
   display: flex;
   align-items: center;
   cursor: pointer;
+  color: white;
 }
 .header .header__menu .menu--profile .profile-img {
   width: 40px;

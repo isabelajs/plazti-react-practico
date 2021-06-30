@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from 'react';
+import { connect } from 'react-redux';
 import '../assets/styles/components/Carousel.scss' ;
 
 
@@ -7,8 +8,8 @@ import '../assets/styles/components/Carousel.scss' ;
 // https://reactjs.org/docs/hooks-reference.html#useref  
 // https://reactjs.org/docs/hooks-faq.html#is-there-something-like-instance-variables
 
-
-    //1 Parte:
+{
+  //1 Parte:
     //en estos dos explican que putas es useRef dice que crea un objeto asi  {current:valores}
     //pero que la diferencia entre useRef y un objeto plano, es que useRef persiste en el tiempo asi como useState
     //osea aunque se haga un nuevo render el objeto es el mismo, pero con las mutaciones que requieran
@@ -76,15 +77,29 @@ import '../assets/styles/components/Carousel.scss' ;
 
   //si no enteindes vuelve a leer hasta que te sangren los ojitos jajajajjaja TE AMO
 
-function Carousel({ children }) {
+}
+    
+function Carousel({ children, mylist }) {
   const container = useRef(null) ;
   const childrenRef = useRef([]);
 
   useEffect(() => {
+
     const lastItemCarousel = childrenRef.current[childrenRef.current.length-1]
     const itemsWithoutLastItem = childrenRef.current.slice(0,-1)
+
+
+    if(childrenRef.current.length == 1){
+      lastItemCarousel.style.transformOrigin = 'center left'
+    }
     
-    if(childrenRef.current,length>1){
+    if(childrenRef.current.length>1){
+
+      const beforeLastItemCarousel = itemsWithoutLastItem[itemsWithoutLastItem.length-1]
+
+      beforeLastItemCarousel.onmouseout = null
+      beforeLastItemCarousel.onmouseover = null
+
       lastItemCarousel.onmouseover = ()=>{itemsWithoutLastItem.forEach(item => {
         item.style.transform = 'translateX(-60px)'
       });}
@@ -96,7 +111,7 @@ function Carousel({ children }) {
     }
 
 
-  }, []);
+  }, [mylist]);
 
 
   const handleMoveRight = () => {
@@ -127,4 +142,10 @@ function Carousel({ children }) {
   );
 }
 
-export default Carousel
+const mapStateToProps = (state)=>{
+  return{
+    mylist: state.mylist
+  }
+}
+
+export default connect(mapStateToProps,null)(Carousel)

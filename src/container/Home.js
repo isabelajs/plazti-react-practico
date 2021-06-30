@@ -1,13 +1,12 @@
 
-import React, { useEffect, useRef } from 'react';
+import React from 'react';
 import { connect } from 'react-redux';
 import Search from '../components/Search';
-import Main from '../components/Main';
 import Categories from '../components/Categories';
 import Categorie from '../components/Categorie';
 import Carousel from '../components/Carousel';
 import CarouselItem from '../components/CarouselItem';
-import '../assets/styles/Home.scss';
+import '../assets/styles/components/Home.scss';
 
 function Home(props) {
 
@@ -16,11 +15,8 @@ function Home(props) {
   
   return (
     <div className='Home'>
-
-      <Main>
-        <Search />
-
-        <Categories>
+      <Search />
+      <Categories>
 
     
         {/* //si dentro del componente lista existen elementos */}
@@ -65,9 +61,6 @@ function Home(props) {
         }
 
         </Categories>
-
-      </Main>
-
     </div>
   );
 }

@@ -1,17 +1,10 @@
 @media (max-width:425px){
-  .main__category{
-      .categoria{
-          .categoria__buttons{
-              opacity: 0;
-              visibility: hidden;
-          }
-      }
+  .categorie__buttons{
+    opacity: 0;
+    visibility: hidden;
   }
 }
 @media (max-width: 600px) {
-  .main__description--title {
-    font-size: 30px;
-  }
 
   .register__container {
     background-color: transparent;
@@ -37,3 +30,20 @@
   }
 }
 
+@media (min-width:600px){
+  .header {
+    &__menu{
+      margin-right: 40px;
+    }
+  }
+  .categorie{
+    width: 90%;
+    margin:0 auto;
+    &__title{
+      margin-left: 0px;
+    }
+    .carousel{
+      margin: 0 55px;
+    }
+  }
+}

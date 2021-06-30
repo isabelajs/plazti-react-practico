@@ -4,8 +4,8 @@ import Home from '../container/home';
 import Login from '../container/Login';
 import Registrer from '../container/Registro';
 import NotFound from '../container/NotFound';
-import Layout from '../components/Layout'
-import store from '../utils/data';
+import Layout from '../components/Layout';
+import '../assets/styles/App.scss'
 
 
 export default function App () {

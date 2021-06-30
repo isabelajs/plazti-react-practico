@@ -2,7 +2,9 @@
   position: relative;
   
   &__title{
-      font-size: 2rem;
+    font-size: 2rem;
+    margin-left: 20px;
+    color: white;
   }
   &__buttons{
     display: flex;
