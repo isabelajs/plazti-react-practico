@@ -1,5 +1,5 @@
 # Platzi Video
 
-Reestructuración del proyecto (https://github.com/isabelajs/carousel)[carousel] por medio de componentes React.
+Reestructuración del proyecto [carousel](https://github.com/isabelajs/carousel) por medio de componentes React.
 
-()[Deploy del proyecto]
+[Deploy del proyecto]()
